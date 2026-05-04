@@ -1,5 +1,5 @@
-const email = "admin@email.com";
-const senha = "1234";
+const email = usuario.email;
+const senha = usuario.senha;
 
 function verificarCredenciais() {
   const emailInformado = document.getElementById("email").value;
@@ -10,8 +10,6 @@ function verificarCredenciais() {
     if (senhaInformada === senha) {
       alert("Senha informada corretamente!");
       window.location = "home.html";
-    } else 
-      alert("Senha informada incorretamente!");
-  } else 
-    alert("E-mail informado incorretamente!");
+    } else alert("Senha informada incorretamente!");
+  } else alert("E-mail informado incorretamente!");
 }
