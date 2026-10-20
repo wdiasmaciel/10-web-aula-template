@@ -45,3 +45,22 @@
     </div>
   </body>
 </html>
+
+<!--
+OBS: 
+O objetivo do "return false;" no evento onclick é impedir o envio 
+padrão (submit) do formulário e o consequente recarregamento da página.
+
+Como funciona:
+
+1. Comportamento Padrão: por estar dentro de uma tag <form>, um elemento 
+   <button> sem um atributo type definido se comporta por padrão como 
+    type="submit". Isso significa que, ao ser clicado, ele tenta enviar os 
+    dados do formulário para o servidor, recarregando a página.
+2. Interrupção: quando o JavaScript do atributo onclick executa e termina 
+   com return false;, ele avisa ao navegador para cancelar a ação padrão do 
+   evento de clique.
+3. Resultado: a função verificarCredenciais() é executada normalmente para 
+   validar os dados na mesma página via JavaScript, mas a página não é 
+   atualizada e o usuário não perde o estado atual da tela.
+-->
